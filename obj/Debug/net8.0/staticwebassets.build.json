@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "fhU2ImUBQt6wKg70kXcefEcGPJEzh+LTgwdgueVpRyk=",
+  "Source": "PortalOS",
+  "BasePath": "_content/PortalOS",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}

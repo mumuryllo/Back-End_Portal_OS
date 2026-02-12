@@ -1,0 +1,18 @@
+﻿using Microsoft.EntityFrameworkCore;
+using PortalOS.Domain.Entities;
+
+namespace PortalOS.Data.Context
+{
+    public class PortalOSDbContext : DbContext
+    {
+        public DbSet<User> Users => Set<User>();
+
+        public PortalOSDbContext(DbContextOptions<PortalOSDbContext> options) : base(options) { }
+
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            modelBuilder.ApplyConfigurationsFromAssembly(typeof(PortalOSDbContext).Assembly);
+            base.OnModelCreating(modelBuilder);
+        }
+    }
+}

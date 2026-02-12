@@ -1,0 +1,9 @@
+﻿using PortalOS.Domain.Entities;
+
+namespace PortalOS.Interfaces.Repositories
+{
+    public interface IUserRepository : IRepository<User>
+    {
+        Task<User?> GetByEmailAsync(string email);
+    }
+}
