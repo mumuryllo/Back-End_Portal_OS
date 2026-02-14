@@ -2,6 +2,7 @@
 using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 using PortalOS.Data.Context;
@@ -11,9 +12,11 @@ using PortalOS.Data.Context;
 namespace PortalOS.Migrations
 {
     [DbContext(typeof(PortalOSDbContext))]
-    partial class PortalOSDbContextModelSnapshot : ModelSnapshot
+    [Migration("20260214235407_Criacao_Inicial")]
+    partial class Criacao_Inicial
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

@@ -1,4 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using PortalOS.Data.Mappings;
 using PortalOS.Domain.Entities;
 
 namespace PortalOS.Data.Context
@@ -11,7 +12,14 @@ namespace PortalOS.Data.Context
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            modelBuilder.ApplyConfigurationsFromAssembly(typeof(PortalOSDbContext).Assembly);
+            //User
+            modelBuilder.ApplyConfiguration(new UserMapping());
+
+            //Fornecedor
+            modelBuilder.ApplyConfiguration(new FornecedorMapping());
+            modelBuilder.ApplyConfiguration(new HistoricoValorHoraFornecedorMapping());
+            modelBuilder.ApplyConfiguration(new HistoricoServicoFornecedorMapping());
+
             base.OnModelCreating(modelBuilder);
         }
     }

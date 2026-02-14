@@ -1,12 +1,9 @@
-using FluentValidation;
 using FluentValidation.AspNetCore;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
-using PortalOS.Data.Mappings;
 using PortalOS.Extensions;
 using PortalOS.Middlewares;
 using PortalOS.Security;
-using PortalOS.Validators;
 using System.Text;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -16,10 +13,10 @@ builder.Services.AddControllers();
 builder.Services.AddDatabase(builder.Configuration);
 builder.Services.AddScopedDependencies();
 
-builder.Services.AddAutoMapper(typeof(UserProfile));
+builder.Services.AddMappingDependencies();
 
 builder.Services.AddFluentValidationAutoValidation();
-builder.Services.AddValidatorsFromAssemblyContaining<LoginRequestValidator>();
+builder.Services.AddValidatorDependencies();
 
 builder.Services.Configure<JwtSettings>(builder.Configuration.GetSection("JwtSettings"));
 

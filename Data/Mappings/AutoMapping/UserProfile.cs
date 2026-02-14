@@ -3,7 +3,7 @@ using PortalOS.Contracts.Request;
 using PortalOS.Contracts.Response;
 using PortalOS.Domain.Entities;
 
-namespace PortalOS.Data.Mappings
+namespace PortalOS.Data.Mappings.AutoMapping
 {
     public class UserProfile : Profile
     {

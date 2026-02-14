@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("PortalOS")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b4e4558835e4342dec01941a22987f52e1a4652a")]
 [assembly: System.Reflection.AssemblyProductAttribute("PortalOS")]
 [assembly: System.Reflection.AssemblyTitleAttribute("PortalOS")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

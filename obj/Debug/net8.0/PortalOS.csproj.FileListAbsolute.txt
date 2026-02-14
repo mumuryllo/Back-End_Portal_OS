@@ -444,4 +444,4 @@ C:\Users\Vaio\Desktop\Back-End Portal OS\PortalOS\PortalOS\obj\Debug\net8.0\refi
 C:\Users\Vaio\Desktop\Back-End Portal OS\PortalOS\PortalOS\obj\Debug\net8.0\PortalOS.pdb
 C:\Users\Vaio\Desktop\Back-End Portal OS\PortalOS\PortalOS\obj\Debug\net8.0\PortalOS.genruntimeconfig.cache
 C:\Users\Vaio\Desktop\Back-End Portal OS\PortalOS\PortalOS\obj\Debug\net8.0\ref\PortalOS.dll
-C:\Users\Vaio\Desktop\Back-End Portal OS\PortalOS\PortalOS\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
+C:\Users\Vaio\Desktop\Back-End Portal OS\PortalOS\PortalOS\obj\Debug\net8.0\PortalOS.sourcelink.json

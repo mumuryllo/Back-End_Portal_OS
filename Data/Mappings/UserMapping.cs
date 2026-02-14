@@ -46,8 +46,6 @@ namespace PortalOS.Data.Mappings
                 .HasColumnName(DatabaseConstants.Columns.CreatedAt)
                 .IsRequired();
 
-            builder.Property(x => x.UpdatedAt)
-                .HasColumnName(DatabaseConstants.Columns.UpdatedAt);
         }
     }
 }
